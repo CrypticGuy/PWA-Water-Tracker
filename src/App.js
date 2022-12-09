@@ -11,13 +11,18 @@ function App() {
     <div className="App">
       <Navbar />
       <header className="App-header">
-        <div class="p-4">
-          <p class="text-base">Glasses drank today</p>
-          <p class="text-2xl">{waterCount}</p>
+        <div className="p-4">
+          <p className="text-base">Glasses drank today</p>
+          <p className="text-2xl">{waterCount}</p>
         </div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setWaterCount(waterCount+1)}>
-          Record a gulp
-        </button>
+        <div className="grid grid-flow-col gap-2">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white text-lg py-1 px-4 rounded-full" onClick={() => setWaterCount(waterCount+1)}>
+            Record drink
+          </button>
+          <button class="bg-red-500 hover:bg-red-700 text-white text-lg py-1 px-4 rounded-full" onClick={() => setWaterCount(waterCount-1)}>
+            Reduce count
+          </button>
+        </div>
       </header>
     </div>
   );
