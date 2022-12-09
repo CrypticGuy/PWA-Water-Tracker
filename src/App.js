@@ -85,8 +85,8 @@ function App() {
               Object.keys(waterTracker).map((key, index) =>
                  (
                   <div className="table-row bg-white border-b dark:bg-gray-800 dark:border-gray-700" key={index}>
-                    <div class="table-cell text-center py-2 px-6 font-medium text-gray-90a0 whitespace-nowrap dark:text-white">{key}</div>
-                    <div class="table-cell text-center">{waterTracker[key]}</div>
+                    <div className="table-cell text-center py-2 px-6 font-medium text-gray-90a0 whitespace-nowrap dark:text-white">{key}</div>
+                    <div className="table-cell text-center">{waterTracker[key]}</div>
                   </div>
                 )
               )  
