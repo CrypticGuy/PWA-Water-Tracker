@@ -1,4 +1,4 @@
-import React, {useState, useCallback, useEffect} from "react";
+import {useState, useCallback, useEffect} from "react";
 import {get, set} from 'idb-keyval';
 
 export default function usePersistedState(keyToPersistWith, defaultState) {
